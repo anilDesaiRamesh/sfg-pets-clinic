@@ -1,0 +1,6 @@
+com\anil\sfgpetclinic\model\BaseEntity.class
+com\anil\sfgpetclinic\model\Person.class
+com\anil\sfgpetclinic\model\Vet.class
+com\anil\sfgpetclinic\model\Pet.class
+com\anil\sfgpetclinic\model\PetType.class
+com\anil\sfgpetclinic\model\Owner.class
