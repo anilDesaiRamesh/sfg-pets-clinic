@@ -1,6 +1,14 @@
 com\anil\sfgpetclinic\model\BaseEntity.class
 com\anil\sfgpetclinic\model\Person.class
-com\anil\sfgpetclinic\model\Vet.class
+com\anil\sfgpetclinic\services\map\PetServiceMap.class
+com\anil\sfgpetclinic\services\OwnerService.class
 com\anil\sfgpetclinic\model\Pet.class
+com\anil\sfgpetclinic\services\VetService.class
+com\anil\sfgpetclinic\services\CrudService.class
+com\anil\sfgpetclinic\services\map\OwnerServiceMap.class
+com\anil\sfgpetclinic\model\Vet.class
+com\anil\sfgpetclinic\services\PetService.class
 com\anil\sfgpetclinic\model\PetType.class
+com\anil\sfgpetclinic\services\map\AbstractMapService.class
+com\anil\sfgpetclinic\services\map\VetServiceMap.class
 com\anil\sfgpetclinic\model\Owner.class
