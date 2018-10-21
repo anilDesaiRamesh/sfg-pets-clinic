@@ -5,15 +5,15 @@ package com.anil.sfgpetclinic.services.map;
 
 import java.util.Set;
 
-import com.anil.sfgpetclinic.model.Pet;
 import com.anil.sfgpetclinic.model.Vet;
-import com.anil.sfgpetclinic.services.CrudService;
+
+import com.anil.sfgpetclinic.services.VetService;
 
 /**
  * @author Anil_Ramesh
  *
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override
 	public Set<Vet> findAll() {

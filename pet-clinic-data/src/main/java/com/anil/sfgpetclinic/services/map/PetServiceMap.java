@@ -6,13 +6,13 @@ package com.anil.sfgpetclinic.services.map;
 import java.util.Set;
 
 import com.anil.sfgpetclinic.model.Pet;
-import com.anil.sfgpetclinic.services.CrudService;
+import com.anil.sfgpetclinic.services.PetService;
 
 /**
  * @author Anil_Ramesh
  *
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
 	public Pet findById(Long id) {
