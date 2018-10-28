@@ -8,14 +8,14 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import com.anil.sfgpetclinic.model.Specialty;
-import com.anil.sfgpetclinic.services.SpecialtiesService;
+import com.anil.sfgpetclinic.services.SpecialtyService;
 
 /**
  * @author Anil_Ramesh
  *
  */
 @Service
-public class SpecialityMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialityMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
 	/*
 	 * (non-Javadoc)
