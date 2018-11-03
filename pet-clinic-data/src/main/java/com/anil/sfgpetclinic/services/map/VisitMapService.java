@@ -5,6 +5,7 @@ package com.anil.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.anil.sfgpetclinic.model.Visit;
@@ -15,6 +16,7 @@ import com.anil.sfgpetclinic.services.VisitService;
  *
  */
 @Service
+@Profile({"default","map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 	/*
