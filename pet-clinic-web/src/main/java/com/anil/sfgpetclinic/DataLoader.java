@@ -14,11 +14,13 @@ import com.anil.sfgpetclinic.model.Pet;
 import com.anil.sfgpetclinic.model.PetType;
 import com.anil.sfgpetclinic.model.Speciality;
 import com.anil.sfgpetclinic.model.Vet;
+import com.anil.sfgpetclinic.model.Visit;
 import com.anil.sfgpetclinic.services.OwnerService;
 import com.anil.sfgpetclinic.services.PetService;
 import com.anil.sfgpetclinic.services.PetTypeService;
 import com.anil.sfgpetclinic.services.SpecialtyService;
 import com.anil.sfgpetclinic.services.VetService;
+import com.anil.sfgpetclinic.services.VisitService;
 import com.anil.sfgpetclinic.services.map.OwnerServiceMap;
 import com.anil.sfgpetclinic.services.map.VetServiceMap;
 
@@ -33,15 +35,17 @@ public class DataLoader implements CommandLineRunner {
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
 	private final SpecialtyService specialtyService;
-
+	private final VisitService visitService;
+	
 	@Autowired
 	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-			SpecialtyService specialtyService) {
+			SpecialtyService specialtyService, VisitService visitService) {
 		super();
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
 		this.specialtyService = specialtyService;
+		this.visitService = visitService;
 	}
 
 	/*
@@ -109,6 +113,12 @@ public class DataLoader implements CommandLineRunner {
 
 		owner2.getPets().add(fionasPet);
 		ownerService.save(owner2);
+		
+		Visit catVisit = new Visit();
+		catVisit.setPet(fionasPet);
+		catVisit.setDate(LocalDate.now());
+		catVisit.setDescription("Sneezy Kitty");
+		visitService.save(catVisit);
 
 		Vet vet1 = new Vet();
 		vet1.setFirstName("Sam");

@@ -15,7 +15,7 @@ import com.anil.sfgpetclinic.services.VisitService;
  *
  */
 @Service
-public class VistMapService extends AbstractMapService<Visit, Long> implements VisitService {
+public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 	/*
 	 * (non-Javadoc)
