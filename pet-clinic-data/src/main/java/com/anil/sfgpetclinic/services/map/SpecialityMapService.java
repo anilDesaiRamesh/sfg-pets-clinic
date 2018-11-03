@@ -7,7 +7,7 @@ import java.util.Set;
 
 import org.springframework.stereotype.Service;
 
-import com.anil.sfgpetclinic.model.Specialty;
+import com.anil.sfgpetclinic.model.Speciality;
 import com.anil.sfgpetclinic.services.SpecialtyService;
 
 /**
@@ -15,7 +15,7 @@ import com.anil.sfgpetclinic.services.SpecialtyService;
  *
  */
 @Service
-public class SpecialityMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
 	/*
 	 * (non-Javadoc)
@@ -23,7 +23,7 @@ public class SpecialityMapService extends AbstractMapService<Specialty, Long> im
 	 * @see com.anil.sfgpetclinic.services.CrudService#findAll()
 	 */
 	@Override
-	public Set<Specialty> findAll() {
+	public Set<Speciality> findAll() {
 		// TODO Auto-generated method stub
 		return super.findAll();
 	}
@@ -34,7 +34,7 @@ public class SpecialityMapService extends AbstractMapService<Specialty, Long> im
 	 * @see com.anil.sfgpetclinic.services.CrudService#findById(java.lang.Object)
 	 */
 	@Override
-	public Specialty findById(Long id) {
+	public Speciality findById(Long id) {
 		// TODO Auto-generated method stub
 		return super.findById(id);
 	}
@@ -45,7 +45,7 @@ public class SpecialityMapService extends AbstractMapService<Specialty, Long> im
 	 * @see com.anil.sfgpetclinic.services.CrudService#save(java.lang.Object)
 	 */
 	@Override
-	public Specialty save(Specialty object) {
+	public Speciality save(Speciality object) {
 		// TODO Auto-generated method stub
 		return super.save(object);
 	}
@@ -56,7 +56,7 @@ public class SpecialityMapService extends AbstractMapService<Specialty, Long> im
 	 * @see com.anil.sfgpetclinic.services.CrudService#delete(java.lang.Object)
 	 */
 	@Override
-	public void delete(Specialty object) {
+	public void delete(Speciality object) {
 		// TODO Auto-generated method stub
 		super.delete(object);
 

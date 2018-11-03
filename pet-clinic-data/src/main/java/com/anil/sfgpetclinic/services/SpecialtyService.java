@@ -3,12 +3,12 @@
  */
 package com.anil.sfgpetclinic.services;
 
-import com.anil.sfgpetclinic.model.Specialty;
+import com.anil.sfgpetclinic.model.Speciality;
 
 /**
  * @author Anil_Ramesh
  *
  */
-public interface SpecialtyService extends CrudService<Specialty, Long> {
+public interface SpecialtyService extends CrudService<Speciality, Long> {
 
 }
