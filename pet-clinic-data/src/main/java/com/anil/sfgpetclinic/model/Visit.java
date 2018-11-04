@@ -4,6 +4,7 @@
 package com.anil.sfgpetclinic.model;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,47 +13,34 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.anil.sfgpetclinic.model.Owner.OwnerBuilder;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 /**
  * @author Anil_Ramesh
  *
  */
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name="visits")
+@Table(name = "visits")
 public class Visit extends BaseEntity {
 
-	@Column(name="date")
+	@Column(name = "date")
 	private LocalDate date;
-	@Column(name="description")
+	@Column(name = "description")
 	private String description;
-	
+
 	@ManyToOne
-	@JoinColumn(name="pet_id")
+	@JoinColumn(name = "pet_id")
 	private Pet pet;
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public Pet getPet() {
-		return pet;
-	}
-
-	public void setPet(Pet pet) {
-		this.pet = pet;
-	}
-
-	
 
 }
