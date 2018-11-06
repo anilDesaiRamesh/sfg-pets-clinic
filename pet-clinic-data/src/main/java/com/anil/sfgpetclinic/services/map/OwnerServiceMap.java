@@ -20,7 +20,7 @@ import com.anil.sfgpetclinic.services.PetTypeService;
  *
  */
 @Service
-@Profile({"default","map"})
+@Profile({ "default", "map" })
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	private final PetTypeService petTypeService;
@@ -85,7 +85,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 	@Override
 	public Owner findByLastName(String lastName) {
 		// TODO Auto-generated method stub
-		return null;
+		return super.findAll().stream().filter(owner -> owner.getLastName().trim().equalsIgnoreCase(lastName))
+				.findFirst().orElse(null);
 	}
 
 }

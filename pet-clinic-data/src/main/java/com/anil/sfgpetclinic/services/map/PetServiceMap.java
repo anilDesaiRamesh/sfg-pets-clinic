@@ -16,7 +16,7 @@ import com.anil.sfgpetclinic.services.PetService;
  *
  */
 @Service
-@Profile({"default","map"})
+@Profile({ "default", "map" })
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
